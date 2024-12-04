@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .swiper-pagination-bullet {
+    @apply bg-white opacity-60;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-white transform scale-150 opacity-100;
+  }
+
+  .swiper-main-text {
+    @apply text-white text-5xl font-extrabold;
+  }
+
+  .swiper-subtext {
+    @apply text-white text-right text-[24px] font-bold leading-normal;
+  }
+
+  .swiper-container {
+    @apply relative w-full h-screen;
+  }
+
+  .swiper-text-container {
+    @apply absolute inset-0 flex flex-col items-center justify-center space-y-4;
+  }
+  .swiper-button-container {
+    @apply flex justify-center items-center gap-6 text-[#FFD400] text-2xl mt-10;
+  }
+}
