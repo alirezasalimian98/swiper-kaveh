@@ -30,7 +30,7 @@ export const CustomSwiper = (props: ICustomSwiper) => {
       >
         {data?.map((item: SwiperData, index: number) => (
           <SwiperSlide style={{ height: "100vh" }} key={index}>
-            <div className="absolute w-full h-full bg-gradient-to-t-black z-30"></div>
+            <div className="swiper-video-filter"></div>
             {item.type === "video" ? (
               <video
                 src={item.src}
@@ -45,7 +45,7 @@ export const CustomSwiper = (props: ICustomSwiper) => {
               <Image src={item.src} alt={item.type} fill />
             )}
             <div className="swiper-text-container z-50">
-              <div className="flex flex-col items-center justify-center mb-10 gap-3">
+              <div className="swiper-subtext-container">
                 <span className="swiper-main-text">{item.mainText}</span>
                 <span className="swiper-subtext">{item.subText}</span>
               </div>

@@ -10,6 +10,12 @@
   .swiper-pagination-bullet-active {
     @apply bg-white transform scale-150 opacity-100;
   }
+  .swiper-subtext-container {
+    @apply flex flex-col items-center justify-center mb-10 gap-3;
+  }
+  .swiper-video-filter {
+    @apply absolute w-full h-full bg-gradient-to-t-black z-30;
+  }
 
   .swiper-main-text {
     @apply text-white text-5xl font-extrabold;
